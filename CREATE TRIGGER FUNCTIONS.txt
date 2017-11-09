@@ -1,0 +1,12 @@
+CREATE TRIGGER remove_apostrophe
+AFTER INSERT ON terra_index.test2
+FOR EACH ROW
+EXECUTE PROCEDURE terra_index.remove_apostrophe();
+
+
+CREATE TRIGGER create_html_tables
+AFTER INSERT
+ON terra_index."tblSoilAnalysisResults"
+FOR EACH ROW
+EXECUTE PROCEDURE terra_index.create_html_tables();
+  
