@@ -8,7 +8,7 @@ import psycopg2
 
 hostname = 'localhost'
 username = 'postgres'
-password = 'gisspecialisten'
+password = '***'
 database = 'terra_index'
 
 myConnection = psycopg2.connect(host=hostname, user=username, password=password, dbname=database)
