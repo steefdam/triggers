@@ -9,4 +9,5 @@ AFTER INSERT
 ON terra_index."tblSoilAnalysisResults"
 FOR EACH ROW
 EXECUTE PROCEDURE terra_index.create_html_tables();
-  
+
+CHANGED?  
